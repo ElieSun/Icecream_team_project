@@ -1,0 +1,253 @@
+.about {
+  padding-top: 125px;
+  padding-bottom: 20px;
+  background-color: $light-section-color;
+
+  background-image: url(../images/about/mob-milk-1x-left.png),
+    url(../images/about/mob-milk-1x-right.png);
+  background-repeat: no-repeat;
+  background-position: left 0 top 766px, right 0 top 766px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 33px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 125px;
+    padding-bottom: 20px;
+
+    background-image: url(../images/about/desk-milk-1x-left.png),
+      url(../images/about/desk-milk-1x-right.png);
+    background-repeat: no-repeat;
+    background-position: left 0 top 342px, right 0 top 342px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/mob-milk-2x-left.png),
+        url(../images/about/mob-milk-2x-right.png);
+    }
+  }
+}
+
+.container-about {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.about__pre-title {
+  font-family: $title-font;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: $light-color;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    margin-bottom: 15px;
+  }
+}
+
+.about__title {
+  font-family: $title-font;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+  margin-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    margin-bottom: 55px;
+  }
+}
+
+.text-about__first-paragraph,
+.text-about__second-paragraph,
+.text-about__third-paragraph,
+.text-about__extra-text {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+}
+
+.text-about__first-paragraph {
+  color: $prymary-text-color;
+  margin-top: 46px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    margin-bottom: 35px;
+  }
+}
+
+.text-about__second-paragraph,
+.text-about__third-paragraph,
+.text-about__extra-text {
+  color: $add-text-color;
+
+  @media screen and (min-width: 768px) {
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    line-height: 1.94;
+  }
+}
+
+.text-about__second-paragraph {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+
+.text-about__extra-text {
+  margin-top: 20px;
+}
+
+.text-about__read-more {
+  font-family: $main-font;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $secondary-text-color;
+  width: 176px;
+  height: 44px;
+  background-color: $main-color;
+  border-radius: 22px;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms linear, color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $first-hover-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 62px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.31;
+    margin-top: 45px;
+  }
+}
+
+.about__icon {
+  width: 20px;
+  fill: currentColor;
+  margin-left: 12px;
+}
+
+.text-about__extra-text {
+  display: none;
+}
+
+#read-more:checked ~ .text-about__extra-text {
+  display: block;
+}
+
+.text-about__more {
+  margin-left: 4px;
+}
+
+.text-about__less {
+  display: none;
+}
+
+#read-more:checked ~ .text-about__read-more .text-about__more {
+  display: none;
+}
+
+#read-more:checked ~ .text-about__read-more .text-about__less {
+  display: inline;
+  margin-left: 4px;
+}
+
+.description-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.image-thumb {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 17px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 74px;
+  }
+}
+
+.text-about {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 463px;
+  }
+}

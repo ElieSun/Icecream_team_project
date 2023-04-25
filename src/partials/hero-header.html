@@ -1,0 +1,209 @@
+<header class="header">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-logo">
+      <a class="logo" href="index.html">
+
+       <img src="./images/header/Logo-new1.png" width="50" height="50" alt="site logo"
+      />
+      <span class="Logo-tekst">IceCream</span>
+        </a>
+        </div>
+      <nav class="header-nav">  
+        <ul class="nav-menu list">
+          <li class="nav-menu__item">
+            <a class="nav-menu__link link current" href="./index.html">Home</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link link" href="#about">About us</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link link" href="#advant">How it's made?</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link link" href="#product">Our products</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__btn" data-modal-open>
+        Buy now<svg class="header-icon" width="4" height="8">
+          <use href="./images/sprite.svg#icon-header-btn"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- ===============MOBILE-MENU==================== -->
+    <button class="burger-btn" data-menu-open>
+      <svg class="burger-btn-icon">
+        <use href="./images/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <div class="mob-menu" data-menu>
+      <button class="mob-menu__close-btn" data-menu-close type="button">
+        <svg width="40" height="40">
+          <use class="mob-menu__icon-close" href="./images/sprite.svg#icon-close-button"></use>
+        </svg>
+      </button>
+      <button class="mob__btn" data-modal-open-mob>
+        Buy now<svg class="header-icon" width="4" height="8">
+          <use href="./images/sprite.svg#icon-header-btn"></use>
+        </svg>
+      </button>
+      <nav class="mob-menu__nav">
+        <ul class="mob-menu__list mob-menu__nav">
+          <li class="mob-menu__item list">
+            <a class="mob-menu__link mob-menu__link-current" href="./index.html">Home </a>
+          </li>
+          <li class="mob-menu__item list">
+            <a href="#about" class="mob-menu__link" >About us</a>
+          </li>
+          <li class="mob-menu__item list">
+            <a class="mob-menu__link" href="#advant">How it’s made?</a>
+          </li>
+          <li class="mob-menu__item list">
+            <a class="mob-menu__link" href="#product">Our products</a>
+          </li>
+          <li class="mob-menu__item list">
+            <a class="mob-menu__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section class="hero">
+      <div class="hero-left-part">
+      <h1 class="hero-title">ice cream made with<span>passion</span></h1>
+      <ul class="hero-two-btn" >
+        <li class="hero-two-btn-item" >
+          
+          <a class="hero-btn-left" href="#product">Products</a>
+        </li>
+
+        <li class="hero-two-btn-item" >
+          <a class="hero-btn-right" href="#about">How it's made?</a>
+
+    
+        </li>
+      </ul>
+      
+      </div>
+        <div class="hero-round">
+          <div class="hero-round__ice" 
+            >
+            
+            <picture>
+              <source 
+                        srcset="
+                        ./images/header/ice.png 1x, 
+                        ./images/header/ice2x.png 2x"
+                        media="(min-width:1200px)"
+                      />
+    
+              <source
+                        srcset="
+                        ./images/header/icedesk1x.png 1x,
+                        ./images/header/icedesk2x.png 2x"
+                        media="(min-width:768px)"
+                      />
+              <source
+                        srcset="
+                        ./images/header/icemob1x.png 1x,
+                        ./images/header/icemob2x.png 2x"
+                        media="(max-width:767px)"
+                      />
+                      <img class="hero-round__ice__image" src="./images/header/ice.png" alt="ice"
+                      />
+                      
+                      
+            </picture>
+            
+          </div>
+        </div>
+      <ul class="hero-text list">
+        <li class="hero-item"><span>16</span>
+        <h3 class="hero-text-name">cafe</h3></li>
+        <li class="hero-item"><span>21</span>
+        <p class="hero-text-name">food trucks</p></li>
+      </ul>
+      <a class="hero-milk" href="">
+        <picture>
+          <source 
+                    srcset="
+                      ./images/header/milk.png 1x, 
+                      ./images/header/milk2x.png 2x"
+                     media="(min-width:1200px)"
+                   />
+
+          <source
+                     srcset="
+                        ./images/header/milkdesk1x.png 1x,
+                        ./images/header/milkdesk2x.png 2x"
+                     media="(min-width:768px)"
+                  />
+          
+                  <img class="hero-milk_image" src="./images/header/milk.png" alt="milk"
+                  />
+                  
+      </picture>
+
+       </a>
+      <a class="hero-girl" href=""
+        >
+        <picture>
+          <source 
+                    srcset="
+                    ./images/header/girl.png 1x, 
+                    ./images/header/girl2x.png 2x"
+                     media="(min-width:1200px)"
+                   />
+
+          <source
+                     srcset="
+                        ./images/header/girldesk1x.png 1x,
+                        ./images/header/girldesk12x.png 2x"
+                     media="(min-width:768px)"
+                  />
+                  <img class="hero-girl_image" src="./images/header/girl.png" alt="girl"
+                  />
+                         
+      </picture>
+        
+        </a>
+      <p class="hero-quote">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <a class="hero-icon" href=""
+        ><img class="hero-icon_image" src="./images/header/icon-hero.png" alt="milk"
+      /></a>
+    </section>
+  </div>
+  <div class="backdrop is-hidden" data-modal>
+ <div class ="modal__window">
+   <button data-modal-close type="button" class="close__modal">
+     <img class="close__button-modal" src="https://uxwing.com/wp-content/themes/uxwing/download/48-checkmark-cross/close.png" alt="">
+   </button>
+   <div class="form__box">
+     <b class="modal__recomend">Leave your info</b>
+      <form class="modal__form" autocomplete="off">
+      <label for="name" class="modal__label">Your name
+        <input class="modal__input" name="nik" type="text" id="name" />
+      </label>
+      <label class="modal__label">Phone
+        <input class="modal__input" name="telephone" type="tel" />
+      </label>
+      <label class="modal__label">Address
+        <input class="modal__input" name="adress" type="adress" />
+      </label>
+        <label class="modal__label">Your order
+          <textarea class="modal__textarea" name="coments" placeholder="Your order"></textarea>
+        
+        </label>
+        <button type="submit" class="modal__button">confirm</button>
+      </form>
+   </div>
+ </div>
+  </div>
+</header>
